@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="655.0" styleClass="provBack" stylesheets="@ProStyling.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Provider.AddItemController">
+   <children>
+      <Label layoutX="149.0" layoutY="45.0" prefHeight="17.0" prefWidth="209.0" text="Item Addition Form" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="foodName" layoutX="149.0" layoutY="118.0" prefHeight="25.0" prefWidth="220.0" promptText="Item Name" style="-fx-background-color: #009688;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="foodPrice" layoutX="149.0" layoutY="159.0" prefHeight="25.0" prefWidth="220.0" promptText="Item Price" style="-fx-background-color: #009688; -fx-font-weight: BOLD;" />
+      <TextField fx:id="foodType" layoutX="149.0" layoutY="202.0" prefHeight="25.0" prefWidth="220.0" promptText="Item type" style="-fx-background-color: #009688; -fx-font-weight: BOLD;" />
+      <TextField fx:id="foodCount" layoutX="149.0" layoutY="250.0" prefHeight="25.0" prefWidth="220.0" promptText="How Much Would You Add" style="-fx-background-color: #009688; -fx-font-weight: BOLD;" />
+      <Button layoutX="164.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#uploadFoodData" prefHeight="25.0" prefWidth="179.0" text="Upload Data" />
+      <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" layoutX="114.0" layoutY="178.0" size="20" />
+      <FontAwesomeIconView fill="WHITE" glyphName="DOWNLOAD" layoutX="130.0" layoutY="355.0" rotate="180.0" size="20" />
+      <TextField fx:id="errorMes" disable="true" editable="false" layoutX="149.0" layoutY="297.0" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: #090909;" />
+      <TextField fx:id="foodCategory" layoutX="382.0" layoutY="118.0" prefHeight="25.0" prefWidth="179.0" promptText="Item Category" style="-fx-background-color: #009688; -fx-font-weight: BOLD;" />
+   </children>
+</AnchorPane>

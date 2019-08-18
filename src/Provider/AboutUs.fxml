@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="655.0" style="-fx-background-color: #090909;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="94.0" layoutY="104.0" prefHeight="17.0" prefWidth="197.0" text="Abenezer Abera" textFill="WHITE" />
+      <Label layoutX="216.0" layoutY="64.0" prefHeight="17.0" prefWidth="197.0" text="This Application Was Developed By" textFill="WHITE" />
+      <Label layoutX="94.0" layoutY="180.0" prefHeight="17.0" prefWidth="197.0" text="Daniel Terefe" textFill="WHITE" />
+      <Label layoutX="94.0" layoutY="230.0" prefHeight="17.0" prefWidth="197.0" text="Kaleb Mesfin" textFill="WHITE" />
+      <Label layoutX="94.0" layoutY="156.0" prefHeight="17.0" prefWidth="197.0" text="Ammanuel Teklu" textFill="WHITE" />
+      <Label layoutX="94.0" layoutY="130.0" prefHeight="17.0" prefWidth="197.0" text="Assegid Assefa" textFill="WHITE" />
+      <Label layoutX="94.0" layoutY="206.0" prefHeight="17.0" prefWidth="197.0" text="Haftom Legesse" textFill="WHITE" />
+      <Label layoutX="281.0" layoutY="341.0" prefHeight="17.0" prefWidth="68.0" text="Version 1.0" textFill="WHITE" />
+      <Label layoutX="283.0" layoutY="401.0" prefHeight="17.0" prefWidth="89.0" text="EthioSheket Inc" textFill="WHITE" />
+      <FontAwesomeIconView fill="WHITE" glyphName="COPYRIGHT" layoutX="260.0" layoutY="413.0" />
+   </children>
+</AnchorPane>

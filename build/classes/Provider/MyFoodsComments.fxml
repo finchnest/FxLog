@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Provider.MyFoodsCommentsController">
+   <children>
+      <TableView fx:id="commentTable" layoutX="232.0" layoutY="65.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="col_food" prefWidth="123.0" text="Item" />
+          <TableColumn fx:id="col_cust" prefWidth="121.0" text="Commentor" />
+            <TableColumn fx:id="col_pro" prefWidth="146.0" text="Provider" />
+            <TableColumn fx:id="col_comment" prefWidth="286.0" text="Comment" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

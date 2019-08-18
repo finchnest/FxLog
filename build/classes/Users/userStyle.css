@@ -1,0 +1,24 @@
+.userBack{
+    -fx-background-color: #20120f;
+}
+
+.button{
+    -fx-background-color: #333300;
+    -fx-background-radius: 3px;
+    -fx-text-fill: #fff;
+     
+}
+.button:hover{
+    -fx-background-color: #5D4037;
+    -fx-text-fill: #fff;
+    -fx-border-color: #003300;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    
+}
+.adPage{
+    -fx-text-fill: #fff;
+
+}

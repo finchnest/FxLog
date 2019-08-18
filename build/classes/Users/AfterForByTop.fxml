@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" fx:id="afterAnchorPane" prefHeight="400.0" prefWidth="677.0" style="-fx-background-color: #212121;" stylesheets="@userStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Users.AfterForByTopController">
+    <children>
+      <ImageView fitHeight="181.0" fitWidth="360.0" layoutX="6.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="206.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="345.20001220703125" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../Images/Food-System.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="afterBack" layoutX="364.0" layoutY="79.0" prefHeight="400.0" prefWidth="345.0" styleClass="afterBack" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIconView fill="#c2d374" glyphName="COMMENT" layoutX="53.0" layoutY="89.0" size="30" />
+            <FontAwesomeIconView fill="WHITE" glyphName="SHARE" layoutX="53.0" layoutY="172.0" size="30" />
+            <TextField fx:id="commentField" layoutX="105.0" layoutY="70.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="42.0" prefWidth="234.0" promptText="Add Comment Below" style="-fx-background-color: #795548;" />
+            <Label layoutX="42.0" layoutY="98.0" text="Comment" textFill="WHITE" />
+            <Label layoutX="53.0" layoutY="178.0" text="Share" textFill="WHITE" />
+            <TextField fx:id="sharedFriend" blendMode="LIGHTEN" layoutX="105.0" layoutY="155.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="234.0" promptText="Enter Your Friend's Username" style="-fx-background-color: #795548;" />
+            <Rating fx:id="rating" layoutX="103.0" layoutY="254.0" />
+            <Label layoutX="56.0" layoutY="261.0" text="Rate" textFill="WHITE" />
+            <Button layoutX="115.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#saveAfterData" prefHeight="25.0" prefWidth="153.0" stylesheets="@userStyle.css" text="Save" />
+            <Button layoutX="289.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#closeAfterScreen" text="CLOSE" />
+         </children>
+      </Pane>
+      <Label layoutX="273.0" layoutY="260.0" prefHeight="35.0" prefWidth="53.0" text="Easy" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="260.0" prefHeight="6.0" prefWidth="260.0" text="Food Ordering Made" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

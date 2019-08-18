@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane id="AnchorPane" fx:id="adminBack" prefHeight="550.0" prefWidth="923.0" styleClass="adminBack" stylesheets="@adminStyling.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminPageController">
+   <children>
+      <Pane fx:id="adminMenuPane" layoutX="14.0" layoutY="14.0" prefHeight="351.0" prefWidth="208.0" style="-fx-background-color: #090909;" stylesheets="@adminStyling.css" AnchorPane.topAnchor="14.0">
+         <children>
+            <Button fx:id="addCust" layoutX="57.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#registerationForm" prefHeight="46.0" prefWidth="151.0" styleClass="addCust" stylesheets="@adminStyling.css" text="Add Customer" />
+            <Button fx:id="viewUsers" layoutX="57.0" layoutY="180.0" mnemonicParsing="false" onMouseClicked="#availableUsers" prefHeight="46.0" prefWidth="151.0" text="Registered Users" />
+            <Button fx:id="viewPros" layoutX="57.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#availableProviders" prefHeight="46.0" prefWidth="151.0" text="Registered Providers" />
+            <Button layoutX="57.0" layoutY="121.0" mnemonicParsing="false" onMouseClicked="#addPToData" prefHeight="46.0" prefWidth="151.0" text="Add Provider" />
+            <Button fx:id="addAd" layoutX="57.0" layoutY="62.0" mnemonicParsing="false" onMouseClicked="#addAdvert" prefHeight="46.0" prefWidth="151.0" text="Add Advertizement" />
+            <FontAwesomeIconView layoutX="24.0" layoutY="207.0" />
+            <FontAwesomeIconView disable="true" fill="WHITE" glyphName="USER" layoutX="14.0" layoutY="38.0" size="40" />
+            <ImageView disable="true" fitHeight="40.0" fitWidth="35.0" layoutX="14.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/image.jpg" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView disable="true" fill="WHITE" glyphName="USERS" layoutX="13.0" layoutY="213.0" size="30" />
+            <ImageView disable="true" fitHeight="53.0" fitWidth="59.0" layoutX="4.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/nm.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="62.0" fitWidth="35.0" layoutX="12.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/image(1).jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="logOut" layoutX="816.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#logout" styleClass="logOut" stylesheets="@adminStyling.css" text="Log Out" />
+      <ImageView fx:id="adminLogo" fitHeight="112.0" fitWidth="215.0" layoutX="18.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buffev.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="72.0" layoutY="528.0" prefHeight="17.0" prefWidth="107.0" text="All Rights Reserved" AnchorPane.leftAnchor="72.0">
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.13809523809523805" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <FontAwesomeIconView fill="WHITE" glyphName="COPYRIGHT" layoutX="55.0" layoutY="540.0" size="12" />
+      <Pane fx:id="dataViewer" layoutX="231.0" layoutY="43.0" prefHeight="500.0" prefWidth="685.0" style="-fx-background-color: #ffff;" stylesheets="@adminStyling.css" />
+      <Button fx:id="userPdf" layoutX="454.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#generatePdf" text="Generate User Report" AnchorPane.topAnchor="12.0" />
+      <Button layoutX="598.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#allTimeUserReport" text="Generate All Time User Report" AnchorPane.topAnchor="12.0" />
+      <FontAwesomeIconView fx:id="end" fill="#e10909" glyphName="CLOSE" layoutX="893.0" layoutY="24.0" onMouseClicked="#end" size="20" AnchorPane.topAnchor="6.857143402099609" />
+   </children>
+</AnchorPane>

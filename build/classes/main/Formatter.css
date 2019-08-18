@@ -1,0 +1,94 @@
+*{
+	dark-primary-color: #5D4037; 
+	default-primary-color: #795345; 
+	light-primary-color: #D7CCC8; 
+	text-primary-color: #FFFFFF; 
+	accent-color:  #FF4081; 
+	primary-text-color: #212121; 
+	secondary-text-color: #757575; 
+	divider-color: #BDBDBD; 
+}
+
+/*.root{
+    -fx-background-color: default-primary-color;
+}*/
+
+.logIn{
+    -fx-background-color: #795345;
+    
+}
+
+
+.welcome{
+    -fx-background-color: #333300;
+    
+}
+
+.forgetBtn{
+    -fx-text-fill: #fff;
+    -fx-underline: true;
+    
+}
+.forgetBtn:hover{
+    -fx-text-fill: #003333;
+    -fx-underline: true;
+   
+}
+
+.logInBtn{
+    -fx-background-color: #a3af33ef;
+    -fx-background-radius: 3px;
+    -fx-text-fill: #fff;
+     
+}
+.logInBtn:hover{
+    -fx-background-color: #990099;
+    -fx-text-fill: #fff;
+    -fx-border-color: #990099;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.backBtn{
+    -fx-fill: #FF4081;
+}
+
+.backBtn:hover{
+    -fx-text-fill: #fff;
+    -fx-background-color: #6747CD;
+}
+
+.close{
+    -fx-fill: #FF4081;
+}
+.close:hover{
+    -fx-text-fill: #fff;
+    -fx-background-color: #990000;
+}
+
+.homePic{
+    -fx-background-image: url('../Images/mainPic.jpg');
+}
+.mainLogIn{
+    -fx-background-image: url('../Images/m5.jpg');
+}
+
+.footer{
+    -fx-background-color: #333300;
+}
+.footerMenu:hover{
+    -fx-background-color: #003333;
+    -fx-text-fill: #fff;
+    -fx-border-color:  #003333;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-radius: 1px;
+    -fx-border-radius: 1px;
+}
+
+.footerMenu{
+    -fx-text-fill: #fff;
+    -fx-background-color: #333300;
+}

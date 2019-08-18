@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="923.0" styleClass="userBack" stylesheets="@userStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Users.UserPageController">
+   <children>
+      <Pane layoutX="2.0" layoutY="62.0" prefHeight="196.0" prefWidth="232.0" style="-fx-background-color: #090909;" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="62.0">
+         <children>
+            <Button layoutX="3.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#myNotifications" prefHeight="44.0" prefWidth="226.0" text="Notifications">
+               <cursor>
+                  <!--<Cursor fx:constant="HAND" />-->
+               </cursor></Button>
+            <Button layoutX="3.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#userPassChange" prefHeight="44.0" prefWidth="226.0" text="Change Password">
+               <cursor>
+                  <!--<Cursor fx:constant="HAND" />-->
+               </cursor></Button>
+            <Button layoutX="3.0" layoutY="51.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#myHistory" prefHeight="44.0" prefWidth="226.0" text="History">
+               <cursor>
+                  <!--<Cursor fx:constant="HAND" />-->
+               </cursor></Button>
+            <Button layoutX="4.0" layoutY="147.0" mnemonicParsing="false" onMouseClicked="#changeAccType" prefHeight="44.0" prefWidth="226.0" text="Change My Account Type">
+               <cursor>
+                  <!--<Cursor fx:constant="HAND" />-->
+               </cursor></Button>
+         </children>
+      </Pane>
+      <Pane fx:id="userMainDataview" layoutX="243.0" layoutY="150.0" prefHeight="400.0" prefWidth="677.0" style="-fx-background-color: #090909;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="150.0" />
+      <ImageView fx:id="compLogo" fitHeight="192.0" fitWidth="218.0" layoutX="10.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Admin/buffev.png" />
+         </image></ImageView>
+      <Button layoutX="770.0" layoutY="78.0" mnemonicParsing="false" onMouseClicked="#userRemoveMyAcc" prefHeight="33.0" prefWidth="130.0" text="Remove My Account" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="78.0">
+         <cursor>
+            <!--<Cursor fx:constant="HAND" />-->
+         </cursor></Button>
+      <Button fx:id="userSignOut" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#userLogOut" prefHeight="33.0" prefWidth="130.0" text="Log Out" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="37.0">
+         <cursor>
+            <!--<Cursor fx:constant="HAND" />-->
+         </cursor></Button>
+      <MenuBar layoutX="-2.0" layoutY="10.0" prefHeight="20.0" prefWidth="874.0" stylesheets="@userStyle.css" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="3.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Options">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#menuNoti" text="Notifications" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuHis" text="History" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuByTop" text="Search By Top Rated" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Modify">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#menuChangePass" text="Change Password" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuChangeAcc" text="Change Account Type" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Others">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuLog" text="Log Out" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuExit" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#displayAll" text="All Categories" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="674.0" layoutY="115.0" mnemonicParsing="false" onMouseClicked="#searchByTopRated" prefHeight="33.0" prefWidth="188.0" stylesheets="@userStyle.css" text="Serarch By Top Rated">
+         <cursor>
+            <!--<Cursor fx:constant="HAND" />-->
+         </cursor></Button>
+      <FontAwesomeIconView fill="#fa6a05" glyphName="CLOSE" layoutX="875.0" layoutY="18.0" onMouseClicked="#userClose" size="35" wrappingWidth="13.911458015441895" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
+         <cursor>
+            <!--<Cursor fx:constant="HAND" />-->
+         </cursor></FontAwesomeIconView>
+      <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="435.0" layoutY="137.0" onMouseClicked="#searchByName" size="25">
+         <cursor>
+            <!--<Cursor fx:constant="HAND" />-->
+         </cursor></FontAwesomeIconView>
+      <TextField fx:id="searchByN" blendMode="COLOR_DODGE" layoutX="243.0" layoutY="117.0" onMouseClicked="#clear" prefHeight="25.0" prefWidth="180.0" promptText="Search By Name" />
+      <TextField fx:id="adPage" disable="true" editable="false" layoutX="445.0" layoutY="39.0" prefHeight="50.0" prefWidth="284.0" style="-fx-background-color: transparent; -fx-font-size: 33;" styleClass="adPage" stylesheets="@userStyle.css" />
+      <TextField fx:id="enterCat" blendMode="COLOR_DODGE" layoutX="498.0" layoutY="116.0" onMouseClicked="#clear" prefHeight="25.0" prefWidth="128.0" promptText="Enter Category" />
+   </children>
+</AnchorPane>

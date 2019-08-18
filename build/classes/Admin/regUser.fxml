@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="regS" prefHeight="500.0" prefWidth="685.0" styleClass="regBack" stylesheets="@adminStyling.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.UserRegisController">
+   <children>
+      <TextField fx:id="fname" layoutX="108.0" layoutY="93.0" prefHeight="25.0" prefWidth="276.0" promptText="First name" style="-fx-background-color: #ededed;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lname" layoutX="108.0" layoutY="140.0" prefHeight="25.0" prefWidth="276.0" promptText="Last Name" style="-fx-background-color: #ededed;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="username" layoutX="109.0" layoutY="192.0" prefHeight="25.0" prefWidth="276.0" promptText="Username" style="-fx-background-color: #ededed; -fx-font-weight: BOLD;" />
+      <TextField fx:id="account" layoutX="108.0" layoutY="282.0" prefHeight="25.0" prefWidth="276.0" promptText="Bank Account" style="-fx-background-color: #ededed;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <FontAwesomeIconView fill="#e01672" glyphName="USER" layoutX="74.0" layoutY="212.0" size="23" />
+      <FontAwesomeIconView fill="#d60d94" glyphName="KEY" layoutX="73.0" layoutY="257.0" size="20" />
+      <FontAwesomeIconView fill="#db0b0b" glyphName="DOLLAR" layoutX="77.0" layoutY="301.0" size="20" />
+      <Button fx:id="registerBtn" layoutX="105.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#regUser" prefHeight="47.0" prefWidth="284.0" styleClass="registerBtn" stylesheets="@adminStyling.css" text="Register" />
+      <RadioButton fx:id="normal" layoutX="104.0" layoutY="354.0" mnemonicParsing="false" style="-fx-background-color: #cbcbcb;" text="Normal">
+         <toggleGroup>
+            <ToggleGroup fx:id="userType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="premium" layoutX="212.0" layoutY="354.0" mnemonicParsing="false" style="-fx-background-color: #cbcbcb;" text="Premium" toggleGroup="$userType" />
+      <Label layoutX="108.0" layoutY="326.0" style="-fx-background-color: #2f2f2f;" text="User Type" textFill="#fffffff7" />
+      <Label layoutX="136.0" layoutY="27.0" prefHeight="47.0" prefWidth="221.0" style="-fx-background-color: #2f2f2f;" text="Registeration Form" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <PasswordField fx:id="password" layoutX="108.0" layoutY="238.0" prefHeight="25.0" prefWidth="276.0" promptText="Password" style="-fx-background-color: #ededed; -fx-font-weight: bold;" />
+      <TextField fx:id="errorMes" editable="false" layoutX="172.0" layoutY="322.0" prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: transparent; -fx-font-style: italic; -fx-font-weight: BOLD;" />
+      <ImageView fx:id="proview" disable="true" fitHeight="170.0" fitWidth="200.0" layoutX="430.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <Button fx:id="profilePic" disable="true" layoutX="481.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#openDir" prefHeight="25.0" prefWidth="115.0" text="Profile" visible="false" />
+      <Label fx:id="fileSelected" layoutX="440.0" layoutY="274.0" prefHeight="32.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

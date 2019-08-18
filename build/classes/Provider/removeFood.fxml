@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="655.0" style="-fx-background-color: #090909;" stylesheets="@ProStyling.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Provider.RemoveFoodController">
+   <children>
+      <TableView fx:id="foodTable" layoutY="6.0" prefHeight="400.0" prefWidth="655.0" style="-fx-background-color: #090909;" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="foodItemName" prefWidth="163.0" text="Item Name" />
+          <TableColumn fx:id="foodItemPrice" prefWidth="67.0" text="Price" />
+            <TableColumn fx:id="foodItemType" minWidth="0.0" prefWidth="173.0" text="Item Type" />
+            <TableColumn fx:id="foodItemRating" minWidth="0.0" prefWidth="57.0" text="Rating" />
+            <TableColumn fx:id="foodItemCount" minWidth="0.0" prefWidth="81.0" text="Item Count" />
+            <TableColumn fx:id="foodItemRatersCount" prefWidth="110.0" text="Raters Count" />
+        </columns>
+      </TableView>
+      <Button fx:id="finalRemove" disable="true" layoutX="115.0" layoutY="406.0" mnemonicParsing="false" onMouseClicked="#delCom" prefHeight="25.0" prefWidth="153.0" text="Remove" />
+      <TextField fx:id="foodDelInfo" disable="true" editable="false" layoutX="302.0" layoutY="406.0" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #ababaa;" />
+   </children>
+</AnchorPane>
